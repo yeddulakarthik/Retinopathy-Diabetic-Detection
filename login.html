@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>
+home
+</title>
+
+<script>
+function formvalid()
+	{
+		var staffid =document.comfrm.uid.value;
+		var name=document.comfrm.pwd.value;
+
+
+		if ((staffid.length==0)||(name.length==0))
+		{
+		alert("fill the form completely")
+		return false;
+		}
+		return true;
+	}
+</script>
+
+<style>
+h1{position:absolute;color:#0077aa;left:160}
+i{position:absolute;top:377;left:610;font-size:16;color:blue}
+#poptop TABLE {
+	WIDTH: 786px}
+#poptop TD {
+	FONT-SIZE: 12px; TEXT-ALIGN: center}
+#poptop A:hover {
+	TEXT-DECORATION: underline}
+#poptop A {font-size:16;
+	FONT-WEIGHT: bold; COLOR:darkblue;font-family:Times New Roman; TEXT-DECORATION: none
+}
+pre{position:absolute;left:510;top:240;font-family:Times New Roman;font-size:16;font-weight:bold;color:darkviolet}
+a{position:absolute;text-decoration:none}
+b{position:absolute;left:190;top:145;color:magenta}
+</style>
+</head>
+<body background=p1.jpg>
+<h1><center><img src=images/caption.jpg></marquee></center></h1>
+<img src="doc\line1.gif" style="position:absolute;top:130;width:777 ;height:25;left:0">
+<div id=poptop>
+<table>
+<tbody>
+<tr>
+<td><a href="index.html" style="position:absolute;top:130;left:30"></a>
+</td>
+<td><a href="applihome.html" style="position:absolute;top:130;left:140"></a>
+</td>
+<td><a href="login.jsp" style="position:absolute;top:130;left:290">Login</a>
+</td>
+<td><a href="contact.jsp" style="position:absolute;top:130;left:410">Contact</a>
+</td>
+<td><a href="complaint.html" style="position:absolute;top:130;left:550"></a>
+</td>
+<td><a href="about.html" style="position:absolute;top:130;left:680"></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<img src="doc\sss.gif" width=180 height=240 style="position:absolute;left:10;top:170">
+
+
+<img src="images\internship.gif" height=100 style="position:absolute;left:15;top:25">
+<img src="images\ddd.jpg" height= 100 style="position:absolute;left:660;top:25">
+
+<table style="position:absolute;left:0;top:165;">
+<tbody>
+<tr>
+<td>
+<iframe src=scroll.jsp width=230 height=300 frameborder=no></iframe>
+</td></tr>
+</tbody>
+</table>
+
+<div style="position:absolute;left:50;top:65;">
+
+<FORM  NAME=comfrm ACTION="login1.jsp" onSubmit="return formvalid()">
+<table border=1	 background=p1.jpg style="position:absolute;top:150;left:280;">
+<caption>  <font face="arial black" color=blue> Login Form </caption>
+<tr>
+<td> <font face=verdana color=blue> User Id </td>
+<td> <input type=text name=uid border=0></td>
+</tr>
+<tr> <td> <td> </tr>
+<tr>
+<td> <font face=verdana  color=blue> Password </td>
+<td> <input type=password name=pwd border=0></td>
+</tr>
+<tr>
+<td> <font face=verdana color=blue>Type of User</td>
+<td> <select name="typs"> 
+<option value="a"> Admin </option>
+<option value="s"> SSC Board </option>
+<option value="i"> Inter Board </option>
+<option value="c"> Company </option>
+<option value="u"> University </option>
+</select></td>
+</tr>
+<tr>
+
+<td colspan=3><center> <input type=submit value=submit></center></td>
+</table>
+
+</div>
+</body>
+</html>
